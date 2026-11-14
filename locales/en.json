@@ -1,0 +1,84 @@
+{
+    "keys": {
+        "none_nearby": "No vehicle you hold keys for is nearby",
+        "missing": "You don't have keys for that vehicle",
+        "received": "You received the keys to %s",
+        "given": "You gave keys for %s",
+        "no_player_nearby": "No player is close enough"
+    },
+    "lock": {
+        "locked": "Vehicle locked",
+        "unlocked": "Vehicle unlocked",
+        "cannot_lock": "That vehicle can't be locked"
+    },
+    "keyfob": {
+        "out_of_range": "The vehicle is out of range"
+    },
+    "ui": {
+        "keyfob": "Keyfob",
+        "lock": "Lock",
+        "unlock": "Unlock",
+        "trunk": "Trunk",
+        "alarm": "Alarm",
+        "locked": "Locked",
+        "unlocked": "Unlocked",
+        "escape": "Esc",
+        "close": "Close"
+    },
+    "ignition": {
+        "no_keys": "You don't have the keys to this vehicle",
+        "failure_fuel": "The engine cranks but the tank is dry",
+        "failure_engine": "The engine won't turn over",
+        "hotwire_prompt": "Hotwire, or use a lockpick on the ignition",
+        "hotwire_refused": "You can't hotwire this ignition",
+        "hotwiring": "Hotwiring",
+        "hotwire_cancelled": "Hotwire cancelled",
+        "hotwire_failed": "Hotwire failed"
+    },
+    "carjack": {
+        "prompt": "Take the keys",
+        "fled": "The driver panicked and ran off with the keys"
+    },
+    "lockpick": {
+        "door_refused": "You can't pick this lock",
+        "door_success": "You picked the lock",
+        "door_failed": "You couldn't pick the lock",
+        "ignition_refused": "You can't pick this ignition",
+        "ignition_failed": "You couldn't turn the ignition",
+        "none_nearby": "No vehicle close enough to lockpick",
+        "not_locked": "That vehicle isn't locked",
+        "broke": "Your lockpick broke"
+    },
+    "radial": {
+        "vehicle": "Vehicle",
+        "engine": "Engine",
+        "doors": "Doors",
+        "windows": "Windows",
+        "seats": "Seats",
+        "extras": "Extras",
+        "extra": "Extra %d",
+        "front_left": "Front left",
+        "front_right": "Front right",
+        "rear_left": "Rear left",
+        "rear_right": "Rear right",
+        "hood": "Hood",
+        "trunk": "Trunk",
+        "driver": "Driver",
+        "passenger": "Passenger",
+        "seat_5": "Seat 5",
+        "seat_6": "Seat 6"
+    },
+    "keybind": {
+        "keyfob": "Open vehicle keyfob",
+        "lock": "Lock or unlock vehicle",
+        "hotwire": "Hotwire vehicle",
+        "rob": "Take vehicle keys at gunpoint",
+        "engine": "Start or stop the engine"
+    },
+    "commands": {
+        "givekey": "Give a copy of your vehicle keys to a nearby player",
+        "givekey_target": "Player id, the nearest player when left out",
+        "engine": "Start or stop the engine of the vehicle you're driving",
+        "shuff": "Slide over to the next seat"
+    }
+}

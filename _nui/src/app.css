@@ -1,0 +1,75 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/onest';
+
+@theme {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-background: #0a0a0a;
+  --color-foreground: #fafafa;
+  --color-card: #141414;
+  --color-muted: #1c1c1c;
+  --color-muted-foreground: #a3a3a3;
+  --color-secondary: #262626;
+  --color-border: #262626;
+  --color-ring-hover: #525252;
+  --color-led-off: #404040;
+  --color-cobalt: #5078d7;
+
+  --font-sans: 'Onest Variable', system-ui, sans-serif;
+
+  --radius-sm: 0.25rem;
+  --radius-lg: 0.5rem;
+
+  --default-transition-duration: 150ms;
+  --default-transition-timing-function: cubic-bezier(0.2, 0, 0, 1);
+
+  --animate-enter: enter 300ms cubic-bezier(0.2, 0, 0, 1);
+  --animate-blink: blink 300ms cubic-bezier(0.2, 0, 0, 1);
+
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateX(0.25rem);
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+}
+
+@layer base {
+  html {
+    font-size: clamp(12px, 1.48vh, 22px);
+  }
+
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-foreground);
+    -webkit-font-smoothing: antialiased;
+    user-select: none;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 1ms !important;
+      transition-duration: 1ms !important;
+    }
+  }
+}
