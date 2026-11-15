@@ -135,7 +135,7 @@ end
 ---@param plate string
 function Keys.revokeAll(plate)
     for citizenId in pairs(temporaryKeys[plate] or {}) do
-        local player <const> = exports.cobalt_core:GetPlayerByCitizenId(citizenId)
+        local player <const> = exports.cobalt_core:GetPlayerByCitizenId(citizenId, true)
 
         if player then TriggerClientEvent('cobalt_vehiclekeys:keysRevoked', player.PlayerData.source, plate) end
     end
