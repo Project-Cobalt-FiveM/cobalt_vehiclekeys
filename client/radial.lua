@@ -79,6 +79,7 @@ local function toggleExtra(extra)
     local vehicle <const> = cache.vehicle
     if not vehicle or not NetworkHasControlOfEntity(vehicle) then return end
 
+    SetVehicleAutoRepairDisabled(vehicle, true)
     SetVehicleExtra(vehicle, extra, IsVehicleExtraTurnedOn(vehicle, extra))
 end
 
